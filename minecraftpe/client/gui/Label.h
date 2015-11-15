@@ -2,15 +2,18 @@
 
 #include "GuiElement.h"
 
-// Size : 144
+// Size : 84
 class Label : public GuiElement
 {
 public:
-	std::string displayString;	// 108
-	char filler1[4];			// 112
-	Color color;				// 116
-	char filler2[10];			// 132
-	bool centered;				// 142
+	std::string displayString;	// 48
+	MinecraftClient* mc;		// 52
+	Color color;				// 56
+	char filler1[8];			// 72
+	bool isWidthSet;			// 80
+	bool hasShadow;				// 81
+	bool centered;				// 82
+	bool isPointerPressed;		// 83
 
 public:
 	Label(MinecraftClient &, const std::string &, const Color &, int, int, int, bool);

@@ -5,11 +5,13 @@
 namespace Touch
 {
 
-// Size : 188
+// Size : 128
 class HeaderButton : public TButton
 {
 public:
-	char filler1[12];	// 176
+	bool isRightSided;    //116
+	int screenWidth;      //120
+	MinecraftClient* mc;  //124
 
 public:
 	HeaderButton(int, MinecraftClient &, const std::string &, bool, bool);

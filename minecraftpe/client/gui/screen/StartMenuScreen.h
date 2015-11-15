@@ -6,7 +6,7 @@
 class ImageWithBackground;
 
 namespace Touch
-{ // Size : 592
+{ // Size : 224
 class StartMenuScreen : public Screen
 {
 public:
@@ -14,14 +14,11 @@ public:
 	static std::vector<std::string> mSplashes;
 
 public:
-	Touch::TButton *playButton;							// 160
-	std::shared_ptr<Touch::TButton> playButton_ptr;		// 164
-	Touch::TButton realmButton;							// 168
-	std::shared_ptr<Touch::TButton> realmButton_ptr;	// 172
-	ImageWithBackground *optionButton;					// 176
-	std::shared_ptr<Touch::TButton> optionButton_ptr;	// 180
-	ImageWithBackground *languageButton;				// 184
-	std::shared_ptr<Touch::TButton> languageButton_ptr;	// 188
+	std::shared_ptr<Touch::TButton> playButton_ptr;		// 160
+	std::shared_ptr<Touch::TButton> realmButton_ptr;	// 168
+	std::shared_ptr<Touch::TButton> optionButton_ptr;	// 176
+	std::shared_ptr<Touch::TButton> languageButton_ptr;	// 184
+	char filler1[32];									// 192
 
 public:
 	StartMenuScreen();
