@@ -14,11 +14,11 @@ public:
 	static std::vector<std::string> mSplashes;
 
 public:
-	std::shared_ptr<Touch::TButton> playButton_ptr;		// 160
-	std::shared_ptr<Touch::TButton> realmButton_ptr;	// 168
-	std::shared_ptr<Touch::TButton> optionButton_ptr;	// 176
-	std::shared_ptr<Touch::TButton> languageButton_ptr;	// 184
-	char filler1[32];									// 192
+	std::shared_ptr<Touch::TButton> playButton_ptr;				// 160
+	std::shared_ptr<Touch::TButton> realmButton_ptr;			// 168
+	std::shared_ptr<ImageWithBackground> optionButton_ptr;		// 176
+	std::shared_ptr<ImageWithBackground> languageButton_ptr;	// 184
+	char filler1[32];											// 192
 
 public:
 	StartMenuScreen();
